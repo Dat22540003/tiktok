@@ -78,6 +78,9 @@
 }
 
 .search-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: var(--search-button-width);
     height: 100%;
     border-top-right-radius: var(--search-border-radius);
@@ -87,6 +90,7 @@
 
     &:hover {
         background-color: rgba(22, 24, 35, 0.03);
+        color: var(--text-color);
         cursor: pointer;
     }
 
@@ -109,6 +113,8 @@
 }
 
 .action-btn {
+    display: flex;
+    align-items: center;
     font-size: 2.2rem;
     color: #161823;
     background-color: transparent;
