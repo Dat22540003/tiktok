@@ -10,6 +10,7 @@ function App() {
                 <Routes>
                     {publicRoutes.map((route, index) => {
                         let Layout = DefaultLayout;
+                        const Page = route.component;
 
                         if (route.layout) {
                             Layout = route.layout;
@@ -23,7 +24,7 @@ function App() {
                                 path={route.path}
                                 element={
                                     <Layout>
-                                        <route.component />
+                                        <Page />
                                     </Layout>
                                 }
                             />
