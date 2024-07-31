@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import classNames from 'classnames/bind';
 import { Link } from 'react-router-dom';
 import styles from './Button.module.scss';
@@ -62,6 +63,10 @@ const Button = ({
             {rightIcon && <span className={cx('icon')}>{rightIcon}</span>}
         </Component>
     );
+};
+
+Button.propTypes = {
+    children: PropTypes.node.isRequired,
 };
 
 export default Button;
